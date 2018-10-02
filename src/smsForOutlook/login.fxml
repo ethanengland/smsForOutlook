@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smsForOutlook.LoginController">
+    <top>
+        <VBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar prefHeight="109.0" prefWidth="450.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#Close" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="500.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SMS for Outlook" textAlignment="CENTER" underline="true" wrappingWidth="324.81884765625">
+               <font>
+                  <Font name="Tahoma" size="35.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#3434cd" />
+                        <Stop color="#101e6b" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+        </HBox>
+    </center>
+   <bottom>
+      <VBox prefHeight="284.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="79.0" prefWidth="500.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../images/Email_Image.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" right="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="txtEmail" prefHeight="40.0" prefWidth="312.0" promptText="Email" text="u0879047@umail.utah.edu">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="8.0" top="8.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="76.0" prefWidth="500.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="-3.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../images/Password_Icon.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="txtPassword" onAction="#Login" prefHeight="40.0" prefWidth="312.0" promptText="Password" text="Pachuca9479401">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="500.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Login" prefHeight="28.0" prefWidth="213.0" text="Sign In" textFill="#2c2c9e" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="500.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/generic-company-logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="25.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+</BorderPane>
